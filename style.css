@@ -1,0 +1,258 @@
+/***************  style general  *******************/
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+a {
+    color: grey
+}
+
+a:hover {
+    color: black
+}
+
+:root {
+    --color-text-blue: #5CADD3;
+    --color-text-white: white;
+    --deco-grise: lightgrey;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/****************  style header  *******************/
+
+.nav_bar {
+    margin: 0 120px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.link_nav li {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.link_nav li:hover {
+    height: 100%;
+    color: black;
+    border-top: 3px solid var(--color-text-blue);
+
+}
+
+/*.link-nav a:hover {
+    color: black;
+    border-top: 3px solid ;
+    padding-top: 40px;
+}*/
+
+.nav_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 3.75rem;
+}
+
+/***********************section Accueil **********************/
+.section_accueil {
+    background-image: url("webagency_images/images/slider/bg1.jpg");
+    height: 35.62rem;
+    background-position: center;
+    background-size: cover;
+    animation: slidy 15s ease-in-out linear;
+}
+
+
+.position_slogan {
+    width: 35%;
+    color: var(--color-text-white);
+    padding: 180px 250px;
+}
+
+.slogan h1 {
+    font-size: 2.50rem;
+    padding-bottom: 1.56rem;
+
+}
+
+.slogan span {
+    color: var(--color-text-blue);
+}
+
+.btn_slogan {
+    margin-top: 10px;
+    padding: 10px 8px;
+    color: white;
+    border: none;
+    background: var(--color-text-blue);
+    width: 100px;
+    border-radius: 5px 3px 3px 3px;
+}
+
+.btn_chevron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_chevron button {
+    top: 17.5rem;
+    position: absolute;
+    font-size: 1.2rem;
+    width: 3.75rem;
+    height: 6.25rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.btn_chevron .btn_chevron-left {
+    position: absolute;
+    right: 0;
+    border-radius: 80px 0 0 80px
+}
+
+.btn_chevron .btn_chevron-right {
+    position: absolute;
+    border-radius: 0 80px 80px 0;
+    left: 0px;
+}
+
+/******************Section Services****************/
+.section_services {
+    margin-top: 50px;
+}
+
+.bar_deco {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trait {
+    display: block;
+    width: 6.25rem;
+    height: 3px;
+    background: var(--deco-grise);
+    margin: 0 5px;
+}
+
+.fa-circle {
+    color: var(--color-text-blue);
+}
+
+.p_services {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.image_services {
+    width: 50%;
+    text-align: end;
+    padding: 0 30px 30px 0;
+}
+
+.main-feature {
+    width: 60%;
+}
+
+.list_services {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 40px;
+}
+
+.list_service-column {
+    display: flex;
+}
+
+.services_circle {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--deco-grise);
+
+}
+
+.services_circle :first-child {
+    color: var(--color-text-blue);
+    font-size: 20px;
+}
+
+.services_circle .fa-circle {
+    position: absolute;
+    animation-name: rotate;
+    animation: rotate 2.5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+    }
+}
+
+.services_text {
+    width: 50%;
+    padding: 20px;
+}
+
+.services_text h3 {
+    padding-bottom: 10px;
+}
+
+/*
+section porfolio
+figure
+figcaption
+*/
