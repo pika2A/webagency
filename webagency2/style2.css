@@ -22,7 +22,6 @@ a:hover {
 }
 
 :root {
-    --color-deci-blue: #4C8FB0;
     --color-text-blue: #5CADD3;
     --color-text-white: white;
     --deco-grise: lightgrey;
@@ -32,16 +31,12 @@ h2 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 16px;
     font-weight: 900;
-}
-
-.p_subtitle {
-    text-align: center;
-    margin: 10px 0;
 }
 
 /****************  style header  *******************/
@@ -93,7 +88,7 @@ h3 {
 /***********************section Accueil **********************/
 .section_accueil {
     position: relative;
-    background: url(webagency_images/images/slider/bg1.jpg);
+    background: url(../webagency_images/images/slider/bg1.jpg);
     height: 35.62rem;
     background-position: center;
     background-size: cover;
@@ -101,37 +96,52 @@ h3 {
     animation: slidy 15s ease-in-out infinite;
 }
 
+.caroussel {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 36.62rem;
+    width: 100%;
+    animation: slydi 10s ease-in-out infinite;
+}
+
+.caroussel img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
 @keyframes slidy {
     0% {
-        background-image: url("webagency_images/images/slider/bg1.jpg");
+        right: 0
     }
 
     45% {
-        background-image: url("webagency_images/images/slider/bg1.jpg");
+        right: 0
     }
 
     50% {
-        background-image: url("webagency_images/images/slider/bg2.jpg");
+        right: 100%
     }
 
     95% {
-        background-image: url("webagency_images/images/slider/bg2.jpg");
+        right: 100%
     }
 
     100% {
-        background-image: url("webagency_images/images/slider/bg1.jpg");
+        right: 200%
     }
 }
 
 .position_slogan {
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     width: 35%;
     color: var(--color-text-white);
     padding: 180px 180px;
 }
 
-.position_slogan h1 {
+.slogan h1 {
     top: 60px;
     position: absolute;
     font-size: 2.50rem;
@@ -139,7 +149,7 @@ h3 {
 
 }
 
-.position_slogan span {
+.slogan span {
     color: var(--color-text-blue);
 }
 
@@ -206,6 +216,10 @@ h3 {
     color: var(--color-text-blue);
 }
 
+.p_services {
+    text-align: center;
+    margin: 10px 0;
+}
 
 .services {
     display: flex;
@@ -277,70 +291,4 @@ h3 {
 
 .services_text h3 {
     padding-bottom: 10px;
-}
-
-/**********************section projets********************/
-
-.section_projets {
-    background: #f5f5f5;
-    margin-top: 30px;
-    padding-top: 50px;
-    text-align: center;
-}
-
-.barnav_projets {
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.btn_projets {
-    font-size: 16px;
-    background: var(--deco-grise);
-    padding: 12px 17px;
-    border: none;
-    margin: 0;
-}
-
-.barnav_projets :first-child {
-    border-radius: 5px 0 0 5px;
-}
-
-.barnav_projets :last-child {
-    border-radius: 0 5px 5px 0;
-}
-
-
-.btn_projets:hover {
-    background: var(--color-text-blue);
-    box-shadow: 0px 5px 1px 0px var(--color-deci-blue);
-    color: var(--color-text-white);
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-    .arrow-down {
-        position: absolute;
-        top: 45px;
-
-        width: 0;
-        height: 0;
-
-        border-right: 12px solid transparent;
-        border-left: 12px solid transparent;
-
-        border-top: 12px solid var(--color-deci-blue);
-    }
-}
-
-.portfolio {
-    margin: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.portfolio img {
-    width: 319px;
 }
