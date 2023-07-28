@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!------------------- Section navigation ------------------------------->
+    <!-- ******************************Section navigation***************************** -->
     <header class="nav_bar">
         <div class="nav_logo">
             <img class="logo" src="webagency_images/images/logo.png" alt="logo webagency">
@@ -31,8 +31,8 @@
             </ul>
         </nav>
     </header>
-    <!--------------------- Section accueil ---------------------------->
     <main>
+        <!--************************* Section accueil *********************************-->
         <section class="section_accueil">
             <div class="position_slogan">
                 <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
@@ -45,7 +45,7 @@
             </div>
         </section>
 
-        <!----------------------- Section Services -------------------------------->
+        <!--******************************Section Services ******************************-->
 
         <section class="section_services">
             <h2> NOS SERVICES </h2>
@@ -97,6 +97,7 @@
                     </div>
                 </div>
             </div>
+            <!--******************************section projets*******************************************-->
         </section>
         <section class="section_projets">
             <h2> NOS PROJETS </h2>
@@ -108,10 +109,10 @@
             <p class="p_subtitle">Encore un doute ?</p>
             <p class="p_subtitle">Regardez les projets qui font le réputation de l'agence!</p>
             <div class="barnav_projets">
-                <button class="btn_projets" type="button">All works<div class="arrow-down"></div></button>
-                <button class="btn_projets" type="button">Creative<div class="arrow-down"></div></button>
-                <button class="btn_projets" type="button">Corporate<div class="arrow-down"></div></button>
-                <button class="btn_projets" type="button">Portfolio<div class="arrow-down"></div></button>
+                <button class="btn_projets" type="button">All works<span class="arrow-down"></span></button>
+                <button class="btn_projets" type="button">Creative<span class="arrow-down"></span></button>
+                <button class="btn_projets" type="button">Corporate<span class="arrow-down"></span></button>
+                <button class="btn_projets" type="button">Portfolio<span class="arrow-down"></span></button>
             </div>
             <div class="portfolio">
                 <figure>
@@ -182,6 +183,40 @@
                     </figcaption>
                 </figure>
             </div>
+        </section>
+        <!-- *********************************************section contact************************************************ -->
+        <section class="contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1516496.986130615!2d7.709538521721736!3d42.06658755051314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12da6a4608030afb%3A0x6ac451965919fe0f!2sWebaxis%20%7C%20Agence%20Web%20Ajaccio!5e0!3m2!1sfr!2sfr!4v1690449232250!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="formulaire">
+                <h3>Contact Info</h3>
+                <h4>WebAgency SAS</h4>
+                <p>7 Ranocchietto, 20167 Ajaccio</p>
+                <p>Tél: 04 95 71 12 43</p>
+                <form action="#" method="post">
+                    <ul>
+                        <li>
+                            <input type="text" id="name" name="user_name" placeholder="Nom">
+                        </li>
+                        <li>
+                            <input type="email" id="mail" name="user_mail" placeholder="Mail">
+                        </li>
+                        <li>
+                            <input type="text" name="objet" id="objet" placeholder="Objet">
+                        </li>
+                        <li>
+                            <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                        </li>
+                        <li>
+                            <button class="btn_slogan" type="submit">envoyer</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
         </section>
 
     </main>

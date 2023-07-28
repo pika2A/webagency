@@ -318,19 +318,19 @@ h3 {
     position: relative;
     display: flex;
     justify-content: center;
+}
 
-    .arrow-down {
-        position: absolute;
-        top: 45px;
+.btn_projets:hover .arrow-down {
+    display: block;
+    position: absolute;
+    top: 45px;
+    width: 0;
+    height: 0;
 
-        width: 0;
-        height: 0;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
 
-        border-right: 12px solid transparent;
-        border-left: 12px solid transparent;
-
-        border-top: 12px solid var(--color-deci-blue);
-    }
+    border-top: 12px solid var(--color-deci-blue);
 }
 
 .portfolio {
@@ -380,3 +380,55 @@ figcaption {
 figcaption:hover {
     opacity: 1;
 }
+
+/*********************section contact**********************/
+.contact {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: lightblue;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.formulaire {
+    background-color: rgba(240, 245, 247, 0.8);
+    position: absolute;
+    width: 330px;
+    right: 20%;
+    height: 500px;
+    margin-top: 60px;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire h3 {
+    margin: 10px 0;
+}
+
+.formulaire form {
+    margin-top: 10px;
+
+}
+
+form input,
+form textarea {
+    width: 93%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+form textarea {
+    height: 170px;
+}
+
+/********************************** THE END  ****************************************/
